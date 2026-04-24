@@ -18,7 +18,7 @@ function mincost(arr)
         //     [arr[i], arr[i+1]] = [arr[i+1], arr[i]];
         //     i++;
         // }
-        arr.sort();
+        arr.sort((a, b) => a - b);
     }
     return cost;
 }
